@@ -1,0 +1,16 @@
+wordList = ['aydt', 'coombs', 'schuhmacher', 'claypoole', 'exhume', 'forehands', 'carin', 'plaits', 'alfonsin', 'hometowns', 'pedestals', 'emad', 'hourly', 'purchaser', 'spogli', 'combativeness', 'henningsen', 'luedke', 'duchin', 'koglin', 'teason', 'bumpings', 'substantially', 'lamendola', 'cecola', 'henze', 'tutti', 'dills', 'satirical', 'jetted', 'intertwine', 'predict', 'breezes', 'cyclist', 'ancillary', 'schaumburg', 'viewer', "bay's", 'emissions', 'kincheloe', 'trees', 'vipperman', 'exhale', 'ornamental', 'repeated']
+
+inputWord = 'foreshadow'
+
+longestPrefix = 0
+bestWord = ''
+
+for word in wordList:
+    index = 0
+    while word[index] == inputWord[index] and index < len(word) and index < len(inputWord):
+        index += 1
+    if index > longestPrefix:
+        longestPrefix = index
+        bestWord = word
+
+print(bestWord)
